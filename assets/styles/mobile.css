@@ -89,7 +89,6 @@ input:focus, textarea:focus{
 }
 
 body{
-    background: var(--gry-clr);
     font-family: 'Montserrat', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
     direction: ltr;
 }
