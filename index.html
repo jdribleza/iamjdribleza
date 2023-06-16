@@ -5,39 +5,37 @@
     <title>I am JDribleza</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">    
-    <link rel="stylesheet" href="assets/styles/mobile.css">
-    <link rel="stylesheet" media="screen and (min-width: 768px)" href="assets/styles/widescreen.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 
 <body>
-    <header class="lt-bg">
+    <header class="lt-bg" id="top">
         <nav>
-            <div class="c-open-menu">
+            <div class="c-menu-btn-cntnr">
                 <a href="" class="c-menu-btn">
                     <img src="assets/icons/menu_icon_15258245215.png" alt="Profile picture">
                 </a>
             </div>
             <ul class="c-menu-list flex-col just-center center-items lt-bg">
                 <div class="c-close-menu-btn">
-                    <a href="">X</a>
+                    <a href=""><img src="assets/icons/x-mark-16.png" alt="Close"></a>
                 </div>
-                <li class="c-home-btn def-brdr">
-                    <a href="#home">home</a>
-                </li>
-                <li><a href="#portfolio">portfolio</a></li>
-                <li><a href="#work">work</a></li>
-                <li><a href="#about">about</a></li>
+                <li class="c-home-btn"><a href="#top" onclick="navigate()">portfolio</a></li>
+                <li><a href="#about" onclick="navigate()">about</a></li>
+                <li><a href="#experience" onclick="navigate()">experience</a></li>
+                <li><a href="#accomplishments" onclick="navigate()">accomplishments</a></li>
+                <li><a href="#contact" onclick="navigate()">contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="c-banner lt-bg flex flex-col just-center center-items" id="top">
+    <div class="c-banner lt-bg flex flex-col just-center center-items">
         <div class="c-dp">
             <img src="assets/img/1666690398936.jpg" alt="">
         </div>
 
         <div class="c-email">
-            <a href="" class="def-brdr">
+            <a href="#contact" class="def-brdr">
                 <img src="assets/icons/message-outline-16.png" alt="">
                 <span class="def-clr">ribleza89@gmail.com</span>
             </a>
@@ -61,7 +59,7 @@
         </div>
     </div>
 
-    <section>
+    <section id="experience">
         <article class="flex flex-col just-center center-items center">
             <div>
                 <img src="assets/icons/briefcase-4-48.png" alt="">
@@ -90,10 +88,7 @@
         </article>
     </section>
 
-    <div class="c-accomplishments flex flex-col just-center center-items center">
-        <div>
-            <img src="assets/icons/filled-flag-48.png" alt="">
-        </div>
+    <div class="c-accomplishments flex flex-col just-center center-items center" id="accomplishments">
         <h2>Accomplishments</h2>
         <div class="c-projects flex just-center center-content center-items">
             <div>
@@ -105,10 +100,9 @@
         </div>
     </div>
 
-
     <div class="to-top lt-bg def-brdr">
         <a href="#top">
-            <img src="assets/icons/menu_icon_15258245215.png" alt="To top">
+            <img src="assets/icons/arrow-150-24.png" alt="To top">
         </a>
     </div>
 
@@ -139,7 +133,7 @@
             </div>
         </div>
 
-        <div class="c-contact">
+        <div class="c-mail" id="contact">
             <div>
                 <h2>Let's talk, send me a message</h2>
             </div>
