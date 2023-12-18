@@ -1,45 +1,45 @@
-var main_header = document.querySelector('header');
-var menu_btn_cntnr = document.querySelector('.c-menu-btn-cntnr');
-var menu_btn = document.querySelector('.c-menu-btn');
-var close_btn = document.querySelector('.c-close-menu-btn > a');
-var nav_link_cntnr = document.querySelector('.c-menu-list');
-var nav_link_btn = document.querySelector('.c-menu-list > li > a');
-var to_top = document.querySelector('.to-top');
-var fb_link = document.querySelector('.fb-link');
-
-//OPENS MENU WHEN MENU BUTTON CLICKED
-menu_btn.addEventListener('click', function(e){
-    e.preventDefault();
-    nav_link_cntnr.style.display = 'flex';
-    this.style.display = 'none';
-    nav_link_cntnr.style.position = 'fixed';
-});
-
-//CLOSE MENU WHEN X BUTTON CLICKED
-close_btn.addEventListener('click', function(e){
-    e.preventDefault();
-    nav_link_cntnr.style.display = 'none';
-    menu_btn.style.display = 'flex';
-});
-
-//CLOSE MENU WHEN LINK CLICKED AND NAVIGATE
-function navigate(){
-    nav_link_cntnr.style.display = 'none';
-    menu_btn.style.display = 'flex';
+let element = (id) =>{
+    let el = document.getElementById(id);
+    return el;
 }
 
-//OPEN NEW WINDOW AND REDIRECT FACEBOOK PAGE
-fb_link.addEventListener('click', function(e){
-    e.preventDefault();
-    window.open('https://web.facebook.com/mrTralala89/');
-});
+let c_element = (classN) =>{
+    let c_el = document.querySelector(classN);
+    return c_el;
+}
 
-//CHANGE NAVIGATION BAR BACKGROUND COLOR
-window.onscroll = function(){
-    if (window.pageYOffset > window.innerHeight-400){
-        to_top.style.display = 'flex';
+window.onload = function(){
+    element('iamjdribleza').style.transform = 'none';
+    element('prologue-msg').style.transform = 'none';
+}
+
+/*
+(function(){
+    loadPrologue();
+})();*/
+
+
+/*
+document.onscroll = function(){
+    if (window.innerHeight - 300 < window.scrollY) {
+        element('navigation-bar').style.background = '#FFFFFF';
     } else {
-        to_top.style.display = 'none';
+        element('navigation-bar').style.background = 'transparent';
+    }
+}*/
+
+window.onscroll = function(){
+    var scroll = window.scrollY;
+    if (scroll > 500) {
+        element('brdr-fx').style.visibility = 'visible';
+        element('brdr-fx').style.height = '100%';
+        element('brdr-fx').style.width = '100%';
+        element('about-title').style.color = 'red';
+    } else {
+        element('brdr-fx').style.visibility = 'hidden';
+        element('brdr-fx').style.height = '0';
+        element('brdr-fx').style.width = '0';
+        element('about-title').style.color = 'red';
     }
 }
 
