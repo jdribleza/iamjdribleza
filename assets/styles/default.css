@@ -21,7 +21,7 @@ ul li{
     padding: 0;
 }
 
-h1, .large{
+h1, .fnt-lrg{
     font-size: 2em;
 }
 
@@ -29,7 +29,7 @@ h2, h3{
     color: #868484;
 }
 
-h2, .medium{
+h2, .fnt-mdm{
     font-size: 1.5em;
 }
 
