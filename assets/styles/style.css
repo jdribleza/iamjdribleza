@@ -131,7 +131,7 @@
     .prologue-container{
         margin: 0;
         flex-direction: row;
-        border-radius: 40px;
+        border-left: 10px solid #AAAAAA;
     }
 
     .prologue-container > h1{
@@ -168,27 +168,27 @@
     }
 
     .about-container,
+    .contact-me-container,
+    .experience-container > div,
     .projects-container > div,
     .more-about-me-container > div
     {
         padding: 20px 20%;
     }
 
-    .experience-container{
-        display: flex;
-        padding: 50px;
-        gap: 40px;
-    }
 
-    .experience-container > div{
-        padding: 50px;
-        border-radius: 20px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
+
+    .projects-container{
+        background: #28262B;
     }
 
     .more-about-me-container{
         background: url("../img/about.jpg") no-repeat right;
         background-size: contain;
+    }
+
+    .contact-me-container > div{
+        padding: 20px 0;
     }
 
     .footer{
