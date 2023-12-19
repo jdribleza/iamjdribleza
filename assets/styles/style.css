@@ -25,7 +25,6 @@
     text-shadow: 0 0 1px #AAAAAA;
 }
 
-
 .social-tab{
     padding: 0 50px;
 }
@@ -52,8 +51,12 @@
     height: 100vh;
 }
 
-.about-container > div:first-child{
-    display: none;
+.about-container > div > img{
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    padding: 6px;
+    border: 1px solid #AAAAAA;
 }
 
 .about-container > div,
@@ -91,14 +94,6 @@
     display: flex;
     justify-content: center;
     padding: 20px 0;
-}
-
-.profile-pic-container > img{
-    width: 160px;
-    height: 160px;
-    border-radius: 100%;
-    padding: 6px;
-    border: 1px solid #AAAAAA;
 }
 
 .contact-me-container > div > div{
@@ -143,25 +138,31 @@
 
     .about-container{
         background: none;
+        display: flex;
+        align-items: center;
         padding: 50px;
-        height: auto;
     }
 
-    .about-container > div:first-child{
-        display: inherit;
+    .about-container > div > img{
+        width: 260px;
+        height: 260px;
     }
 
-    .about-container > div:first-child > img{
-        width: 100%;
-    }
 
     .intro-container{
         display: flex;
         align-items: center;
     }
 
-
+    .about-container,
+    .experience-container,
+    .projects-container,
+    .more-about-me-container {
+        height: 100vh;
+    }
+    .about-container,
     .experience-container > div,
+    .projects-container > div,
     .more-about-me-container > div
     {
         padding: 20px 20%;
