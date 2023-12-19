@@ -102,6 +102,10 @@
     background: #28262B;
 }
 
+.projects-container > div > h1{
+    color: #FFFFFF;
+}
+
 .contact-me-container > div > div{
     display: flex;
     align-items: center;
