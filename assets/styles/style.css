@@ -147,6 +147,10 @@
         padding: 50px;
     }
 
+    .about-container > div:first-child{
+        display: inherit;
+    }
+
     .about-container > div > img{
         width: 260px;
         height: 260px;
