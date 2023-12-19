@@ -51,6 +51,10 @@
     height: 100vh;
 }
 
+.about-container > div:first-child{
+    display: none;
+}
+
 .about-container > div > img{
     width: 160px;
     height: 160px;
