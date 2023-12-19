@@ -26,7 +26,7 @@
 }
 
 .social-tab{
-    padding: 0 50px;
+
 }
 
 .social-tab > ul > li{
@@ -63,6 +63,11 @@
     border: 1px solid #AAAAAA;
 }
 
+.intro-container{
+    display: flex;
+    flex-direction: column;
+}
+
 .about-container > div,
 .experience-container > div,
 .projects-container > div,
@@ -92,12 +97,6 @@
 .contact-me-container
 {
     background: #EEEEEE;
-}
-
-.profile-pic-container{
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
 }
 
 .contact-me-container > div > div{
@@ -156,7 +155,6 @@
         height: 260px;
     }
 
-
     .intro-container{
         display: flex;
         align-items: center;
@@ -169,7 +167,6 @@
         height: 100vh;
     }
     .about-container,
-    .experience-container > div,
     .projects-container > div,
     .more-about-me-container > div
     {
@@ -178,21 +175,16 @@
 
     .experience-container{
         display: flex;
-        justify-content: flex-end;
-        align-content: flex-end;
         padding: 50px;
         gap: 40px;
     }
 
     .experience-container > div{
         padding: 50px;
-        border: 1px solid #666;
-        border-radius: 30px;
+        border-radius: 20px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
     }
 
-    .experience-container > div:first-child{
-        width: 100%;
-    }
 
     .footer{
         align-items: flex-start;
