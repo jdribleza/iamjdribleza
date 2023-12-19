@@ -26,7 +26,7 @@
 }
 
 .social-tab{
-
+    margin-top: 50px;
 }
 
 .social-tab > ul > li{
@@ -157,7 +157,6 @@
 
     .intro-container{
         display: flex;
-        align-items: center;
     }
 
     .about-container,
