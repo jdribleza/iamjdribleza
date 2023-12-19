@@ -4,6 +4,8 @@
     box-sizing: border-box;
     font-family: "GlacialIndifference-Regular", Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
     text-decoration: none;
+
+    letter-spacing: 0.02em;
 }
 
 @font-face {
