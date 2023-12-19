@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: column;
     padding: 20px 50px;
+    margin-top: 20px;
 }
 
 .prologue-container > h1{
@@ -122,6 +123,7 @@
         position: relative;
         justify-content: center;
         align-content: center;
+        align-items: center;
         width: 100%;
         height: 100vh;
     }
@@ -129,9 +131,12 @@
     .prologue-container{
         margin: 0;
         flex-direction: row;
+        border-radius: 40px;
     }
 
     .prologue-container > h1{
+        color: #FFFFFF;
+        border-radius: 20px;
         text-shadow: 0 0 1px #000000;
     }
 
@@ -161,6 +166,7 @@
     .more-about-me-container {
         height: 100vh;
     }
+
     .about-container,
     .projects-container > div,
     .more-about-me-container > div
@@ -180,6 +186,10 @@
         box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
     }
 
+    .more-about-me-container{
+        background: url("../img/about.jpg") no-repeat right;
+        background-size: contain;
+    }
 
     .footer{
         align-items: flex-start;
