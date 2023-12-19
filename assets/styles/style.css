@@ -98,6 +98,10 @@
     background: #EEEEEE;
 }
 
+.projects-container{
+    background: #28262B;
+}
+
 .contact-me-container > div > div{
     display: flex;
     align-items: center;
@@ -176,11 +180,6 @@
         padding: 20px 20%;
     }
 
-
-
-    .projects-container{
-        background: #28262B;
-    }
 
     .more-about-me-container{
         background: url("../img/about.jpg") no-repeat right;
