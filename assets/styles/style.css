@@ -104,6 +104,20 @@
     color: #FFFFFF;
 }
 
+.projects-container > div > ul{
+    display: flex;
+    gap: 50px;
+}
+
+.projects-container > div > ul > li{
+    display: inline-block;
+}
+
+.projects-container > div > ul > li > img{
+    width: 100%;
+    height: auto;
+}
+
 .contact-me-container > div > div{
     display: flex;
     align-items: center;
@@ -168,7 +182,6 @@
 
     .about-container,
     .experience-container,
-    .projects-container,
     .more-about-me-container {
         height: 100vh;
     }
