@@ -100,13 +100,14 @@
     background: #28262B;
 }
 
-.projects-container > div > h1{
-    color: #FFFFFF;
-}
-
 .projects-container > div > ul{
     display: flex;
-    gap: 50px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.projects-container > div > h1{
+    color: #FFFFFF;
 }
 
 .projects-container > div > ul > li{
@@ -189,12 +190,14 @@
     .about-container,
     .contact-me-container,
     .experience-container > div,
-    .projects-container > div,
     .more-about-me-container > div
     {
         padding: 20px 20%;
     }
 
+    .projects-container > div > ul{
+        flex-direction: row;
+    }
 
     .more-about-me-container{
         background: url("../img/about.jpg") no-repeat right;
