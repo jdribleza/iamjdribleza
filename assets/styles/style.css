@@ -15,6 +15,7 @@
 .prologue-container{
     display: flex;
     flex-direction: column;
+    gap: 20px;
     padding: 20px 50px;
     margin-top: 20px;
 }
