@@ -183,8 +183,7 @@
     }
 
     .about-container,
-    .experience-container,
-    .more-about-me-container {
+    .experience-container {
         height: 100vh;
     }
 
